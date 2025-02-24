@@ -1,0 +1,20 @@
+---
+
+# Student Data
+
+Students:
+  - Name: James
+    Age: 16
+    Grade: X
+    Subjects: 
+      Math
+      English
+      French
+
+  - Name: Peter
+    Age: 13
+    Grade: IIX
+    Subjects: 
+      Finnace
+      English
+      French

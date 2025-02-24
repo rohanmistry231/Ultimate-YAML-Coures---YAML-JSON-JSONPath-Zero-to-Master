@@ -1,0 +1,19 @@
+---
+definitions: 
+  steps:
+    - step:
+        name: &Validate-Project
+        script:
+          - mvn validate
+        artifacts: &Project-artifacts
+          - target/**
+    - step: 
+        name: &Test-Compiled-Source-Code
+        script:
+          - mvn test
+        artifacts: *Project-artifacts
+    - step:
+        name: &Test-and-Build
+        script:
+          - mvn test
+        artifacts: *Project-artifacts

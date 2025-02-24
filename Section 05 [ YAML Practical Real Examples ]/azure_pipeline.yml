@@ -1,0 +1,53 @@
+parameters:
+- name: myString
+  type: string
+  default: a string
+- name: myMultiString
+  type: string
+  default: default
+  values:
+  - default
+  - ubuntu
+- name: myNumber
+  type: number
+  default: 2
+  values:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+- name: myBoolean
+  type: boolean
+  default: true
+- name: myObject
+  type: object
+  default:
+    foo: FOO
+    bar: BAR
+    things:
+    - one
+    - two
+    - three
+    nested:
+      one: apple
+      two: pear
+      count: 3
+- name: myStep
+  type: step
+  default:
+    script: echo my step
+- name: mySteplist
+  type: stepList
+  default:
+    - script: echo step one
+    - script: echo step two
+
+trigger: none
+
+jobs: 
+- job: stepList
+  steps: ${{ parameters.mySteplist }}
+- job: myStep
+  steps:
+    - ${{ parameters.myStep }}

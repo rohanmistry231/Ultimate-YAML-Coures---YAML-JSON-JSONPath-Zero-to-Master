@@ -1,0 +1,14 @@
+---
+applications:
+  - Loans:
+      name: XYZLoans
+      technology: Python
+      team: 30
+  - Cards:
+      name: XYZCards
+      technology: Java
+      team: 17
+  - Accounts:
+      name: XYZAccounts
+      technology: C#
+      team: 40

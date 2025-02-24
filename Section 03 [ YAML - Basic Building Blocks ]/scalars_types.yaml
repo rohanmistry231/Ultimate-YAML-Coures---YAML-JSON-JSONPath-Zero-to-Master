@@ -1,0 +1,31 @@
+---
+name: John McLean
+language: English
+BirthYear: 1785
+BirthDate: "11"
+DOB: 11-03-1785
+Lifetime: 74.8
+Died_Hex: 0x745
+Died_Octal: 03505
+good_man: true
+American: Yes
+null_vale: null
+
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rss-site
+  labels:
+    app: web
+spec:
+  containers:
+    - name: front-end
+      image: nginx
+      ports:
+        - containerPort: 80
+    - name: rss-reader
+      image: nickchase/rss-php-nginx:v1
+      ports:
+        - containerPort: 88

@@ -1,0 +1,29 @@
+---
+# List sequence in Block Style
+applications:
+- Loans
+- Credit Cards
+- Saving Accounts
+- Current Accounts
+departments:
+  - Loan Recovery
+  - Insurance
+  - Security
+
+# List sequence in Flow Style  
+locations: [New York, Chicago, Seattle, "Denver"]
+
+# Nested/Embedded Sequences
+products:
+  - Loans:
+    - Home Loan
+    - Education Loan
+  - Credit Cards:
+    - VIP Cards
+    - Student Cards
+  - Saving Accounts:
+    - Family Account
+    - Individual Account
+  - Current Accounts:
+    - LLP
+    - Pvt. Ltd

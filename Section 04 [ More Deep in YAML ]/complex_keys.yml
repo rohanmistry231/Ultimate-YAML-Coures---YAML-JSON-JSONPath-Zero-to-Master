@@ -1,0 +1,11 @@
+---
+? This is key with 
+  multiple Lines
+: and this is the Value of this complex key
+
+? - dev
+  - pre-production
+  - production
+: - https://example.dev.com
+  - https://example.pre-prod.com
+  - https://example.prod.com 
